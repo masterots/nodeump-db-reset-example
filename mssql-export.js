@@ -7,6 +7,7 @@ var nodeump = new Nodeump({
   database: 'nodeump',
   username: 'nodeump',
   password: 'nodeump',
+  dialect: 'mssql',
   dataplan: dataplan
 });
 

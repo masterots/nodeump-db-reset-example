@@ -1,0 +1,7 @@
+[
+  {
+    "tableName": "test_table",
+    "hasIdentity": true,
+    "excludedColumns": []
+  }
+]

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var chalk = require('chalk');
+var dataplan = require('./dataplan.nodeump.json');
 var Nodeump = require("Nodeump");
 var nodeump = new Nodeump({
   host: 'localhost',
@@ -7,7 +8,7 @@ var nodeump = new Nodeump({
   username: 'nodeump',
   password: 'nodeump',
   dialect: 'mssql',
-  dataplan: ['test_table']
+  dataplan: dataplan
 });
 
 nodeump.importData()

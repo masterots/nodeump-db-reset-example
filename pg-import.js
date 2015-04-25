@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 var chalk = require('chalk');
+var dataplan = require('./dataplan.nodeump.json');
 var Nodeump = require("Nodeump");
 var nodeump = new Nodeump({
   host: 'localhost',
   database: 'nodeump',
   username: 'nodeump',
   password: 'nodeump',
-  dataplan: ['test_table']
+  dataplan: dataplan
 });
 
 nodeump.importData()
